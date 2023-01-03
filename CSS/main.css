@@ -4,21 +4,17 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
+    /*font-size: 16px;
+    font-weight: 400;*/
 }
-/*.font-common {
-    
-}*/
-
 body {
     max-width: 1400px;
     margin: auto;
     padding: 0 20px;
 }
-/*.body-gap {
+.body-gap {
     padding-left: 5px;
-}*/
+}
 a {
     text-decoration: none;
     color: #000000;
@@ -126,19 +122,25 @@ form input{
 }
 /*fin formulaire recherche*/
 /*debut filtres recherche*/
-.font-filters {
-    font-size: 17px;
-    font-weight: 700;
-}
 .filtres {
     margin: 32px 0 0 12px;
     display: flex;
     align-items: center;
 }
-div h2 {
+.filtres h2 {
     margin-right: 32px;
+    font-size: 17px;
+    font-weight: 700;
+}
+.filtres p {
+    font-size: 17px;
+    font-weight: 700;
+    margin-right: 20px;
+    white-space: nowrap;
 }
 .groupe-filtres {
+    font-size: 17px;
+    font-weight: 700;
     display: flex;
     flex-wrap: wrap;
     gap: 2.5vw;
@@ -150,6 +152,8 @@ div h2 {
     border: 2px solid #D9D9D9;
     border-radius: 25px;
     cursor: pointer;
+    font-size: 17px;
+    font-weight: 700;
 }
 .bouton-filtre:hover {
     background-color: #DEEBFF;
@@ -157,10 +161,6 @@ div h2 {
 .icon-filtre {
     margin-left: 20px;
     margin-right: 10px;
-}
-.filtres p {
-    margin-right: 20px;
-    white-space: nowrap;
 }
 /*fin filtres recherche*/
 /*debut info*/
@@ -181,38 +181,51 @@ div h2 {
 }
 /*fin info*/
 /*debut cartes*/
-section h3 {
-    font-size: 16px;
-    font-weight: 700;
-}
-section p {
-    font-size: 14px;
-    font-weight: 400;
-}
 .carte {
     background-color: #FFFFFF;
     border-radius: 20px;
     filter: drop-shadow(0 3px 15px rgba(0, 0, 0, 0.1));
-}
-.cartes-hebergement .carte {
-    width: 30.75%;
-    height: 200px;
-}
-.carte-populaire .carte a {
-    width: 100%;
-    height: 144px;
-    border-radius: 20px;
-    display: flex;
-}
-.carte-activites .carte {
-    width: 21.5vw;
-    max-height: 445px;
 }
 .image-carte {
     object-fit: cover;
     width: 100%;
     border: 5px solid #FFFFFF;
     border-radius: 20px 20px 0 0;
+}
+.description {
+    margin-left: 15px;
+    margin-top: -1.5%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.description h3 {
+    font-size: 16px;
+    font-weight: 700;
+}
+.description p {    
+    font-size: 14px;
+    font-weight: 400;
+    margin: 10px 0 0 44px;
+}
+.prix {
+    flex: 1;
+}
+.etoile {
+    bottom: 0;
+    height: 12px;
+    justify-self: flex-end;
+    display: flex;
+}
+.etoile--shaded {
+    color: #F2F2F2;
+}
+.hebergements .description {
+    height: 36%;
+}
+.cartes-hebergement .carte {
+    width: 30.75%;
+    height: 200px;
 }
 .hebergements .image-carte {
     height: 62%;
@@ -222,24 +235,20 @@ section p {
     height: 100%;
     border-radius: 20px 0 0 20px;
 }
-.activites .image-carte {
-    height: 28vw;
-    max-height: 87.5%;
-    border: none;
-}
-.description {
-    margin-left: 15px;
-    margin-top: -1.5%;
+.carte-populaire .carte a {
+    width: 100%;
+    height: 144px;
+    border-radius: 20px;
     display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-.hebergements .description {
-    height: 36%;
 }
 .populaire .description {
     width: 50%;
     padding-top: 16px;
+}
+.activites .image-carte {
+    height: 28vw;
+    max-height: 87.5%;
+    border: none;
 }
 .activites .description {
     width: auto;
@@ -247,17 +256,9 @@ section p {
     margin: -1.5% 20px 0 20px;
     justify-content: center;
 }
-.prix-carte {
-    flex: 1;
-}
-.etoile-carte {
-    bottom: 0;
-    height: 12px;
-    justify-self: flex-end;
-    display: flex;
-}
-.etoile-carte--shaded {
-    color: #F2F2F2;
+.carte-activites .carte {
+    width: 21.5vw;
+    max-height: 445px;
 }
 /*fin cartes*/
 /*debut hébergement*/
@@ -274,20 +275,20 @@ section p {
     background-color: #F2F2F2;
     border-radius: 20px;
 }
-section h2 {
+.hebergements h2 , .plus{
     margin: 42px 0 23px 40px;
 }
-.carte-hebergement {
+.cartes-hebergement {
     width: 91%;
     height: 69%;
     margin: auto;
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: wrap;
     justify-content: space-between;
     align-content: space-between;
 }
-section p {
-    margin: 40px 0 0 44px;
+.hebergements .description {
+    height: 36%;
 }
 /*fin hebergements*/
 /*debut populaire*/
@@ -304,7 +305,7 @@ section p {
     justify-content: space-between;
     align-items: center;
 }
-.carte-populaire {
+.cartes-populaires {
     width: 82%;
     height: 23%;
     margin: auto;
@@ -516,7 +517,7 @@ footer p {
         background-color: #FFFFFF;
     }
 
-    .lodgings__heading {
+    section h2 {
         width: 89vw;
         margin: 25px auto 20px auto;
     }
@@ -547,7 +548,7 @@ footer p {
         width: 90vw;
     }
 
-    .card__heading {
+    .description h3 {
         padding-top: 5px;
     }
 
