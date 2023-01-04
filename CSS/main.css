@@ -10,9 +10,6 @@ body {
     margin: auto;
     padding: 0 20px;
 }
-/*.body-gap {
-    padding-left: 5px;
-}*/
 a {
     text-decoration: none;
     color: #000000;
@@ -105,17 +102,6 @@ form input{
     cursor: pointer;
 }
 /*fin bouton recherche*/
-/*.city-form__glass {
-    display: none;
-    align-items: center;
-    justify-content: center;
-    width: 50px;
-    color: #FFFFFF;
-    background-color: #0065FC;
-    border: 1px solid #0065FC;
-    border-radius: 0px 15px 15px 0px;
-    cursor: pointer
-}*/
 /*fin formulaire recherche*/
 /*debut filtres recherche*/
 .filtres {
@@ -337,57 +323,48 @@ footer p {
     .body-gap {
         padding-left: 0;
     }
-
     .filtres {
         margin-left: 0;
     }
-
     .info {
         margin-left: 0;
     }
-
-    .all-lodgings {
+    .hebergement-global {
         flex-direction: column;
         gap: 50px;
     }
-
     .hebergements {
         width: 100%;
         max-width: none;
     }
-
     .populaire {
         width: 100%;
         max-width: none;
         height: 278px;
     }
-
     .entete-populaire {
+        margin: auto 23px auto;
         width: 91%;
     }
-
     .carte-populaire {
         flex-direction: row;
         width: 91%;
         height: auto;
     }
-
-    .carte-populaire .card {
+    .carte-populaire .carte {
         width: 31.5%;
     }
-
     .activites {
         margin: 70px 0;
     }
-
     .entete-activites {
         margin-bottom: 34px;
     }
-
     footer {
+        flex-direction: column;
         gap: 8%;
+        padding-left: 30px;
     }
-
 }
 /*fin tablette*/
 /*debut mobile*/
@@ -395,154 +372,108 @@ footer p {
     body {
         padding: 0;
     }
-
     .body-gap {
         padding-left: 20px;
     }
-
-    .font-filters {
+    .filtres {
         font-size: 11px;
     }
-
     header {
         height: 130px;
         flex-direction: column;
         padding-top: 20px;
     }
-
-    .header__logo {
+    header img {
         margin-left: 0;
     }
-
     nav {
         width: 100%;
         margin-top: 25px;
     }
-
-    .nav__link {
+    nav li {
         flex: 1;
     }
-
-    .nav__link a {
+    nav li a {
         justify-content: center;
         border-bottom: #F2F2F2 solid 3px;
     }
-
-    .nav__link a:hover {
+    nav li a:hover {
         border-bottom: #0065FC solid 3px;
         border-top: none;
     }
-
-    .city-form {
-        width: 90vw;
-        margin: 35px auto;
-        padding-left: 0;
-    }
-
-    .city-form__destination {
-        flex: 1;
-        width: 0;
-    }
-
-    .city-form__submit-button {
-        display: none;
-    }
-
-    .city-form__glass {
-        display: flex;
-    }
-
     .filtres {
         width: 90vw;
         margin: auto;
         flex-direction: column;
         align-items: flex-start;
     }
-
     .groupe-filtres {
         margin-top: 15px;
         gap: 3vw;
     }
-
     .bouton-filtre {
         width: 43vw;
     }
-
     .icon-filtre {
         margin: 0 3px 0 8px;
     }
-
     .info {
         margin: 43px 0 0 10px;
         display: flex;
         align-items: flex-start;
     }
-
     .texte-info {
         width: 86vw;
     }
-
-    .all-lodgings {
+    .hebergement-global {
         flex-direction: column-reverse;
         gap: 0;
     }
-
     .populaire {
         height: 580px;
         border-radius: 0;
     }
-
-    .popular__heading {
+    .entete-populaire {
         width: 89vw;
     }
-
-    .popular__cards {
+    .cartes-populaires {
         flex-direction: column;
         gap: 10px;
     }
-
     .hebergements {
         height: auto;
         border-radius: 0;
         background-color: #FFFFFF;
     }
-
     section h2 {
         width: 89vw;
         margin: 25px auto 20px auto;
     }
-
-    .lodgings__cards {
+    .cartes-hebergement {
         flex-direction: column;
         gap: 12px;
     }
-
-    .lodgings__show-more {
+    .plus {
         visibility: hidden;
     }
-
-    .activities__heading {
+    .entete-activites {
         width: 89vw;
         margin: 0 auto 25px auto;
     }
-
-    .activities__cards {
+    .carte-activites {
         flex-direction: column;
         align-items: center;
         gap: 24px;
     }
-
     .populaire .carte,
     .hebergements .carte,
     .activites .carte {
         width: 90vw;
     }
-
-    .description h3 {
+    description h3 {
         padding-top: 5px;
     }
-
-    .footer {
+    footer {
         flex-direction: column;
         gap: 40px;
         padding-left: 30px;
