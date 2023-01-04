@@ -4,17 +4,15 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
-    /*font-size: 16px;
-    font-weight: 400;*/
 }
 body {
     max-width: 1400px;
     margin: auto;
     padding: 0 20px;
 }
-.body-gap {
+/*.body-gap {
     padding-left: 5px;
-}
+}*/
 a {
     text-decoration: none;
     color: #000000;
@@ -25,12 +23,12 @@ h1 {
     font-weight: 700;
 }
 p {
-    margin-top: 8px;
+    margin-top: 4px;
 }
 .icon-filtre,
 .icon-info,
-.etoile-carte,
-.popular__chart {
+.etoile,
+.graph-populaire {
     color: #0065FC;
 }
 /*fin général*/
@@ -74,10 +72,6 @@ nav li a:hover {
 }
 /*fin header*/
 /*debut formulairs recherche*/
-.font-search {
-    font-size: 18px;
-    font-weight: 700;
-}
 form {
     margin-top: 20px;
     display: flex;
@@ -97,6 +91,8 @@ form input{
     padding-left: 16px;
     border: 1px solid #F2F2F2;
     width: 236px;
+    font-size: 18px;
+    font-weight: 700;
 }
 /* debut bouton recherche*/
 .submit-button {
@@ -109,7 +105,7 @@ form input{
     cursor: pointer;
 }
 /*fin bouton recherche*/
-.city-form__glass {
+/*.city-form__glass {
     display: none;
     align-items: center;
     justify-content: center;
@@ -119,28 +115,24 @@ form input{
     border: 1px solid #0065FC;
     border-radius: 0px 15px 15px 0px;
     cursor: pointer
-}
+}*/
 /*fin formulaire recherche*/
 /*debut filtres recherche*/
 .filtres {
     margin: 32px 0 0 12px;
     display: flex;
     align-items: center;
+    font-size: 17px;
+    font-weight: 700;
 }
 .filtres h2 {
     margin-right: 32px;
-    font-size: 17px;
-    font-weight: 700;
 }
 .filtres p {
-    font-size: 17px;
-    font-weight: 700;
     margin-right: 20px;
     white-space: nowrap;
 }
 .groupe-filtres {
-    font-size: 17px;
-    font-weight: 700;
     display: flex;
     flex-wrap: wrap;
     gap: 2.5vw;
@@ -152,8 +144,6 @@ form input{
     border: 2px solid #D9D9D9;
     border-radius: 25px;
     cursor: pointer;
-    font-size: 17px;
-    font-weight: 700;
 }
 .bouton-filtre:hover {
     background-color: #DEEBFF;
@@ -235,7 +225,7 @@ form input{
     height: 100%;
     border-radius: 20px 0 0 20px;
 }
-.carte-populaire .carte a {
+.cartes-populaires .carte a {
     width: 100%;
     height: 144px;
     border-radius: 20px;
@@ -262,7 +252,7 @@ form input{
 }
 /*fin cartes*/
 /*debut hébergement*/
-.all-lodgings {
+.hebergement-global {
     display: flex;
     justify-content: space-between;
     gap: 3vw;
@@ -298,7 +288,7 @@ form input{
     background-color: #F2F2F2;
     border-radius: 20px;
 }
-.popular__heading {
+.entete-populaire {
     width: 82%;
     margin: 42px auto 23px auto;
     display: flex;
@@ -318,7 +308,7 @@ form input{
 .activites {
     margin: 60px 0;
 }
-.activities__heading {
+.activites h2 {
     margin-bottom: 18px;
 }
 .carte-activites {
@@ -372,7 +362,7 @@ footer p {
         height: 278px;
     }
 
-    .popular__heading {
+    .entete-populaire {
         width: 91%;
     }
 
@@ -390,7 +380,7 @@ footer p {
         margin: 70px 0;
     }
 
-    .activities__heading {
+    .entete-activites {
         margin-bottom: 34px;
     }
 
