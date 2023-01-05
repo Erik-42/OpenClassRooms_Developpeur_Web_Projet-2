@@ -329,6 +329,9 @@ footer p {
     .info {
         margin-left: 0;
     }
+    .carte {
+            width: 31.5%;
+    }
     .hebergement-global {
         flex-direction: column;
         gap: 50px;
@@ -340,20 +343,18 @@ footer p {
     .populaire {
         width: 100%;
         max-width: none;
-        height: 278px;
+        height: auto;
+        padding-bottom: 30px;
     }
     .entete-populaire {
-        margin: auto 23px auto;
         width: 91%;
     }
-    .carte-populaire {
+    .cartes-populaires {
+        display: flex;
         flex-direction: row;
         width: 91%;
         height: auto;
-    }
-    .carte-populaire .carte {
-        width: 31.5%;
-    }
+    }    
     .activites {
         margin: 70px 0;
     }
@@ -361,9 +362,7 @@ footer p {
         margin-bottom: 34px;
     }
     footer {
-        flex-direction: column;
-        gap: 8%;
-        padding-left: 30px;
+        gap: 8%;  
     }
 }
 /*fin tablette*/
@@ -430,7 +429,7 @@ footer p {
         gap: 0;
     }
     .populaire {
-        height: 580px;
+        height: 626px;
         border-radius: 0;
     }
     .entete-populaire {
@@ -470,7 +469,7 @@ footer p {
     .activites .carte {
         width: 90vw;
     }
-    description h3 {
+    .description h3 {
         padding-top: 5px;
     }
     footer {
