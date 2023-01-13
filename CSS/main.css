@@ -95,7 +95,6 @@ form {
 form div {
     width: 50px;
     height: 50px;
-    text-align: center;
     background-color: #F2F2F2;
     display: flex;
     align-items: center;
@@ -121,6 +120,10 @@ form input {
     border: 1px solid #0065FC;
     border-radius: 0px 15px 15px 0px;
     cursor: pointer;
+}
+
+.loupe {
+    display: none;
 }
 
 /*fin bouton recherche*/
@@ -188,14 +191,14 @@ form input {
 
 /*fin info*/
 /*debut cartes*/
-.carte {
+article {
     background-color: #FFFFFF;
     border-radius: 20px;
     filter: drop-shadow(0 3px 15px rgba(0, 0, 0, 0.1));
     box-shadow: 6px 6px 25px rgba(0, 0, 0, 0.5);
 }
 
-.image-carte {
+article img {
     object-fit: cover;
     width: 100%;
     border: 5px solid #FFFFFF;
@@ -232,7 +235,7 @@ form input {
     display: flex;
 }
 
-.etoile--shaded {
+.etoile-shaded {
     color: #F2F2F2;
 }
 
@@ -240,22 +243,22 @@ form input {
     height: 36%;
 }
 
-.cartes-hebergement .carte {
+.cartes-hebergement article {
     width: 30.75%;
     height: 200px;
 }
 
-.hebergements .image-carte {
+.hebergements article img {
     height: 62%;
 }
 
-.populaire .image-carte {
+.populaire article img {
     width: 40%;
     height: 100%;
     border-radius: 20px 0 0 20px;
 }
 
-.cartes-populaires .carte a {
+.cartes-populaires article a {
     width: 100%;
     height: 144px;
     border-radius: 20px;
@@ -267,7 +270,7 @@ form input {
     padding-top: 16px;
 }
 
-.activites .image-carte {
+.activites article img {
     height: 28vw;
     max-height: 87.5%;
     border: none;
@@ -280,7 +283,7 @@ form input {
     justify-content: center;
 }
 
-.carte-activites .carte {
+.carte-activites article {
     width: 21.5vw;
     max-height: 445px;
 }
@@ -396,7 +399,7 @@ footer p {
         margin-left: 0;
     }
 
-    .carte {
+    article {
         width: 31.5%;
     }
 
@@ -479,6 +482,19 @@ footer p {
     nav li a:hover {
         border-bottom: #0065FC solid 3px;
         border-top: none;
+    }
+
+    .submit-button {
+        display: none;
+    }
+
+    .loupe {
+        display: flex;
+        color: #FFFFFF;
+        background-color: #0065FC;
+        border: 1px solid #0065FC;
+        border-radius: 0px 15px 15px 0px;
+        cursor: pointer
     }
 
     .filtres {
@@ -573,9 +589,9 @@ footer p {
         gap: 24px;
     }
 
-    .populaire .carte,
-    .hebergements .carte,
-    .activites .carte {
+    .populaire article,
+    .hebergements article,
+    .activites article {
         width: 90vw;
     }
 
