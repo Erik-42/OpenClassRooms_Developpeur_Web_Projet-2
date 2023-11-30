@@ -16,7 +16,7 @@
 <div align="center">
   <h1>Booki</h1>
   <a href="https://github.com/Erik-42">
-    <img src="./img/HomePage.png" alt="Bannière Booki" width="300" height="200">
+    <img src="./images/logo/Booki@3x.png" alt="Bannière Booki" width="300" height="100">
   </a>
 </div>
 
